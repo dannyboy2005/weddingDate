@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Simonetta&display=swap");
+
+body {
+  background: #03001e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  font-family: 'Open Sans Condensed';
+  color: #ccc;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.jumbotron .lead {
+    font-size: 1.5rem;
+}
+
+nav {
+    opacity: 90%;
+    background: background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+}
+
+.jumbotron {
+ background: url(img/img1.png)no-repeat center center fixed;
+ /* background-repeat: no-repeat;
+ background-size: auto; */
+
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+   /* background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  
+   background: linear-gradient(to right, #9733EE, #DA22FF); 
+   margin: auto;
+   max-width: 80vw;  */
+
+
+.jumbotron h1 {
+    font-family: 'Simonetta';
+}
+
+.container-fluid {
+
+  background: url(img/proposal\ \(1\).jpg)no-repeat center center fixed;
+  /* background-repeat: no-repeat;
+  background-size: auto; */
+ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+#story-img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+#story p {
+  font-size: 1.5rem;
+}
+
+form label {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 2px solid #fff;
+}
+
+/* font-family: 'Simonetta', ;
+font-family: 'Open Sans Condensed', ; */
+.img {
+width: 350px;
+height: 300px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+
+}
+
+form input, form textarea {
+  margin:auto;
+  max-width: 60vw;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .img {
+    width: 120px;
+height: 200px;
+  }
+
+  #story-img {
+display: none;
+  }
+}
