@@ -29,7 +29,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- 
+      
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -39,11 +39,21 @@
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="#contact"
-              >Confirm Attendence</a
+              >Our Story</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact"
+              >Information</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact"
+              >RSVP</a
             >
           </li>
         </ul>
-      </div> -->
+      </div>
     </nav>
     <!-- Showcase -->
     <section>
@@ -57,9 +67,7 @@
           love to celerbrate our big day with you.
         </p>
         <hr class="my-4" />
-        <a class="btn btn-primary btn-lg" href="#contact" role="button"
-          >Send us a Message</a
-        >
+        <a class="btn btn-primary btn-lg" href="#contact" role="button">RSVP</a>
       </div>
     </section>
 
@@ -118,12 +126,6 @@
               my side. She is the most incredible and bueatiful woman in the
               world and I am the luckiest man there is to have her love."
               <br />
-              <br />
-              "We first met in work at Iceland and I wish I knew then what this
-              incredible woman would give me in life. I asked her to marry me
-              not only because I love her but she makes me want to be a better
-              person and shes the kind of woman a man either stays with forever
-              or regrets losing forever and I wont be the latter"
             </p>
           </div>
           <div class="col my-auto">
@@ -145,10 +147,44 @@
       </div>
     </section>
 
+    <section id="info">
+      <div class="container text-center">
+        <h2 class="display-3 mb-5">Reception Information</h2>
+        <p>
+          The ceromony will be taking place at Warrington registry office at
+          1pm. Once we have tied the knot we will be having a meal at
+          Donnatellos, an italian resturaunt in Warrington on Orford Lane(please
+          see below for directions).
+          <br />
+          <br />
+          We have put together a suitible menu for the occasion, please choose
+          below what starter, main and dessert you would like to order.
+          <br />
+          <br />
+          Vegaterian meals are available along with other choices on
+          <a href="http://donatellorestaurant.co.uk/" target="blank"
+            >Donnatellos website</a
+          >. if you would prefer something else from the menu please let us kn
+          ow in the comments section in the below form.
+          <br />
+          <br />
+          Thankyou
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.0159549817017!2d-2.5920854841596426!3d53.39665447998958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b0230f5dccd79%3A0x254b4f6215bfa23e!2sDonatello%20Pizzeria!5e0!3m2!1sen!2suk!4v1583699302980!5m2!1sen!2suk"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container text-center">
-        <h2 class="display-3 mb-5">
-          Send Your Best Wishes to The Happy Couple
+        <h2 class="display-3 mt-3 mb-5">
+          Please pick your meal for the reception
         </h2>
         <form
           data-netlify="true"
@@ -167,34 +203,155 @@
               required
             />
           </div>
+
           <div class="form-group">
+            <label for="people">Number of attendees</label>
+            <input
+              class="form-control"
+              type="number"
+              name="people"
+              id="name"
+              placeholder="Attendees"
+              required
+            />
+          </div>
+
+          <h3 class="mb-4 mt-5 display-4">Starter</h3>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md">
+                <label for="starter1">Minestrone Soup</label>
+                <input
+                  class="form-control"
+                  type="checkbox"
+                  name="starter1"
+                  id="starter1"
+                  value="Minestrone Soup"
+                />
+              </div>
+              <div class="col-md">
+                <label for="starter2"
+                  >Costolette Donatello(Ribs in BBQ sauce)</label
+                >
+                <input
+                  class="form-control"
+                  type="checkbox"
+                  name="starter2"
+                  id="starter2"
+                  value="Costolette Donatello"
+                />
+              </div>
+              <div class="col-md">
+                <label for="starter3">Pollo Arrabiata</label>
+                <input
+                  class="form-control"
+                  type="checkbox"
+                  name="starter3"
+                  id="starter3"
+                  value="Pollo Arrabiata"
+                />
+              </div>
+            </div>
+          </div>
+
+          <h3 class="mb-4 mt-5 display-4">Main</h3>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md">
+                <label for="main1">Penne Arrabiata</label>
+                <input
+                  class="form-control"
+                  type="checkbox"
+                  name="main1"
+                  id="main1"
+                  value="Penne Arrabiata"
+                />
+              </div>
+              <div class="col-md">
+                <label for="main2"
+                  >Spaghetti Bolognese</label
+                >
+                <input
+                  class="form-control"
+                  type="checkbox"
+                  name="main2"
+                  id="main2"
+                  value="Spaghetti Bolognese"
+                />
+              </div>
+              <div class="col-md">
+                <label for="main3">Spaghetti Carbonara</label>
+                <input
+                  class="form-control"
+                  type="checkbox"
+                  name="main3"
+                  id="main3"
+                  value="Spaghetti Carbonara"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md">
+                <label for="main4">Lasagne Casalinga</label>
+                <input
+                  class="form-control"
+                  type="checkbox"
+                  name="main4"
+                  id="main4"
+                  value="Lasagne Casalinga"
+                />
+              </div>
+              <div class="col-md">
+                <label for="main5"
+                  >Margherita Pizza</label
+                >
+                <input
+                  class="form-control"
+                  type="checkbox"
+                  name="main5"
+                  id="main5"
+                  value="Margherita Pizza"
+                />
+              </div>
+              <div class="col-md">
+                <label for="main6">Ham & Mushroom Pizza</label>
+                <input
+                  class="form-control"
+                  type="checkbox"
+                  name="main6"
+                  id="main6"
+                  value="Ham & Mushroom Pizza"
+                />
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="form-group mt-5">
             <label for="message"
-              >IF you would like something else from Donnatellos please let us
+              >If you would like something else from Donnatellos please let us
               know</label
             >
             <textarea
               class="form-control"
               name="message"
-              rows="5"
+              rows="3"
               id="message"
-              placeholder="Please Write a message"
+              placeholder=""
               rows="5"
               required
             ></textarea>
           </div>
           <p>
-            <a href="http://donatellorestaurant.co.uk/" target="blank"
-              ><button class="btn btn-primary btn-lg mb-5" type="submit">
-                click here to go to Donnatellos website
-              </button></a
-            >
+            <button class="btn btn-primary btn-lg mb-5" type="submit">
+              Submit
+            </button>
           </p>
         </form>
-        <a href="http://donatellorestaurant.co.uk/" target="blank"
-          ><button class="btn btn-primary btn-lg mb-5" type="submit">
-            click here to go to Donnatellos website
-          </button></a
-        >
       </div>
     </section>
     <script
