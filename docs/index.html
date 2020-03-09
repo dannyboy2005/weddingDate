@@ -38,12 +38,12 @@
             ></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#contact"
+            <a class="nav-link text-light" href="#story"
               >Our Story</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#contact"
+            <a class="nav-link text-light" href="#info"
               >Information</a
             >
           </li>
@@ -169,6 +169,8 @@
           <br />
           Thankyou
         </p>
+
+        <h3 class="mb-3 mt-5 display-5">We will not be offering desserts as after the meal we will be having a gathering at our home. There will be cake, sweets and plenty of booze!</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.0159549817017!2d-2.5920854841596426!3d53.39665447998958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b0230f5dccd79%3A0x254b4f6215bfa23e!2sDonatello%20Pizzeria!5e0!3m2!1sen!2suk!4v1583699302980!5m2!1sen!2suk"
           width="100%"
@@ -204,23 +206,67 @@
           </div>
 
           <div class="form-group">
-            <label for="people">Number of attendees</label>
-            <input
-              class="form-control"
-              type="number"
-              name="people"
-              id="people"
-              placeholder="Attendees"
-              required
-            />
+            <label for="people">Number of attendees including yourself</label>
+            <div class="col-md">
+              <select class="form-control" id="attendees" name="attendees">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
           </div>
 
           <h3 class="mb-3 mt-5 display-4">Starter</h3>
 
-          <div class="form-group">
+          <!-- Guest 1 -->
+          <div class="form-group" id="starter-guest-1">
             <div class="row">
               <div class="col-md">
                 <select class="form-control" id="starter" name="starter">
+                  <option value="null"></option>
+                  <option value="Minestrone Soup">Minestrone Soup</option>
+                  <option value="Costolette Donatello">Costolette Donatello</option>
+                  <option value="Pollo Arrabiata">Pollo Arrabiata</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Guest 2 -->
+          <div class="form-group display-none" id="starter-guest-2">
+            <div class="row">
+              <div class="col-md">
+                <select class="form-control" id="starter" name="starter">
+                  <option value="null"></option>
+                  <option value="Minestrone Soup">Minestrone Soup</option>
+                  <option value="Costolette Donatello">Costolette Donatello</option>
+                  <option value="Pollo Arrabiata">Pollo Arrabiata</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guest 3 -->
+          <div class="form-group display-none" id="starter-guest-3">
+            <div class="row">
+              <div class="col-md">
+                <select class="form-control" id="starter" name="starter">
+                  <option value="null"></option>
+                  <option value="Minestrone Soup">Minestrone Soup</option>
+                  <option value="Costolette Donatello">Costolette Donatello</option>
+                  <option value="Pollo Arrabiata">Pollo Arrabiata</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guest 4 -->
+          <div class="form-group display-none" id="starter-guest-4">
+            <div class="row">
+              <div class="col-md">
+                <select class="form-control" id="starter" name="starter">
+                  <option value="null"></option>
                   <option value="Minestrone Soup">Minestrone Soup</option>
                   <option value="Costolette Donatello">Costolette Donatello</option>
                   <option value="Pollo Arrabiata">Pollo Arrabiata</option>
@@ -231,10 +277,84 @@
 
           <h3 class="mb-3 mt-3 display-4">Main</h3>
 
-          <div class="form-group">
+          <!-- Guest 1 -->
+          <div class="form-group" id="main-guest-1"> 
             <div class="row">
               <div class="col-md">
                 <select class="form-control" id="main" name="main">
+                  <option value="null"></option>
+                  <option value="Penne Arrabiata">Penne Arrabiata</option>
+                  <option value="Spaghetti Bolognese">Spaghetti Bolognese</option>
+                  <option value="Spaghetti Carbonara">Spaghetti Carbonara</option>
+                  <option value="Lasagne Casalinga">Lasagne Casalinga</option>
+                  <option value="Margherita (v) Pizza">Margherita (v) Pizza</option>
+                  <option value="Prosciutto and Funghi">Prosciutto and Funghi Pizza(Tomato, mozzarella, ham and mushrooms)</option>
+                  <option value="Donatello">Donatello Pizza(Tomato, mozzarella, mushrooms and salsiccia sausage)</option>
+                  <option value="Bistecca ala Griglia">Bistecca ala Griglia(Juicy sirloin steak grilled to your liking)</option>
+                  <option value="Bistecca alla al Pepe">Bistecca alla al Pepe(Tender sirloin steak in a peppercorn cream and brandy sauce)</option>
+                  <option value="Pollo alla Milanese">Pollo alla Milanese(Breast of chicken coated in breadcrumbs lightly fried in butter served with spaghetti Napoli)</option>
+                  <option value="Pollo Sophia">Pollo Sophia(Breast of chicken cooked in garlic butter, white wine, tomato and a touch of cream. Topped with ham and mozzarella cheese)
+                  </option>
+                </select>
+                <p>All chicken and steak dishes are served with Chef's choice of potatoes and vegetables</p>
+              </div>
+            </div>
+          </div>
+
+           <!-- Guest 2 -->
+           <div class="form-group display-none" id="main-guest-2"> 
+            <div class="row">
+              <div class="col-md">
+                <select class="form-control" id="main" name="main">
+                  <option value="null"></option>
+                  <option value="Penne Arrabiata">Penne Arrabiata</option>
+                  <option value="Spaghetti Bolognese">Spaghetti Bolognese</option>
+                  <option value="Spaghetti Carbonara">Spaghetti Carbonara</option>
+                  <option value="Lasagne Casalinga">Lasagne Casalinga</option>
+                  <option value="Margherita (v) Pizza">Margherita (v) Pizza</option>
+                  <option value="Prosciutto and Funghi">Prosciutto and Funghi Pizza(Tomato, mozzarella, ham and mushrooms)</option>
+                  <option value="Donatello">Donatello Pizza(Tomato, mozzarella, mushrooms and salsiccia sausage)</option>
+                  <option value="Bistecca ala Griglia">Bistecca ala Griglia(Juicy sirloin steak grilled to your liking)</option>
+                  <option value="Bistecca alla al Pepe">Bistecca alla al Pepe(Tender sirloin steak in a peppercorn cream and brandy sauce)</option>
+                  <option value="Pollo alla Milanese">Pollo alla Milanese(Breast of chicken coated in breadcrumbs lightly fried in butter served with spaghetti Napoli)</option>
+                  <option value="Pollo Sophia">Pollo Sophia(Breast of chicken cooked in garlic butter, white wine, tomato and a touch of cream. Topped with ham and mozzarella cheese)
+                  </option>
+                </select>
+                <p>All chicken and steak dishes are served with Chef's choice of potatoes and vegetables</p>
+              </div>
+            </div>
+          </div>
+
+           <!-- Guest 3 -->
+           <div class="form-group display-none" id="main-guest-3"> 
+            <div class="row">
+              <div class="col-md">
+                <select class="form-control" id="main" name="main">
+                  <option value="null"></option>
+                  <option value="Penne Arrabiata">Penne Arrabiata</option>
+                  <option value="Spaghetti Bolognese">Spaghetti Bolognese</option>
+                  <option value="Spaghetti Carbonara">Spaghetti Carbonara</option>
+                  <option value="Lasagne Casalinga">Lasagne Casalinga</option>
+                  <option value="Margherita (v) Pizza">Margherita (v) Pizza</option>
+                  <option value="Prosciutto and Funghi">Prosciutto and Funghi Pizza(Tomato, mozzarella, ham and mushrooms)</option>
+                  <option value="Donatello">Donatello Pizza(Tomato, mozzarella, mushrooms and salsiccia sausage)</option>
+                  <option value="Bistecca ala Griglia">Bistecca ala Griglia(Juicy sirloin steak grilled to your liking)</option>
+                  <option value="Bistecca alla al Pepe">Bistecca alla al Pepe(Tender sirloin steak in a peppercorn cream and brandy sauce)</option>
+                  <option value="Pollo alla Milanese">Pollo alla Milanese(Breast of chicken coated in breadcrumbs lightly fried in butter served with spaghetti Napoli)</option>
+                  <option value="Pollo Sophia">Pollo Sophia(Breast of chicken cooked in garlic butter, white wine, tomato and a touch of cream. Topped with ham and mozzarella cheese)
+                  </option>
+                </select>
+                <p>All chicken and steak dishes are served with Chef's choice of potatoes and vegetables</p>
+              </div>
+            </div>
+          </div>
+
+           <!-- Guest 4 -->
+           <div class="form-group display-none" id="main-guest-4"> 
+            <div class="row">
+              <div class="col-md">
+                <select class="form-control" id="main" name="main">
+                  <option value="null"></option>
                   <option value="Penne Arrabiata">Penne Arrabiata</option>
                   <option value="Spaghetti Bolognese">Spaghetti Bolognese</option>
                   <option value="Spaghetti Carbonara">Spaghetti Carbonara</option>
@@ -255,38 +375,61 @@
 
           <h3 class="mb-3 mt-3 display-4">Sides</h3>
 
-          <div class="form-group">
+          <!-- Guest 1 -->
+          <div class="form-group" id="sides-guest-1">
             <div class="row">
               <div class="col-md">
                 <select class="form-control" id="sides" name="sides">
+                  <option value="null"></option>
                   <option value="Plain Garlic Pizza Bread (v)">Plain Garlic Pizza Bread (v)</option>
                   <option value="Cheese Garlic Pizza Bread (v)">Cheese Garlic Pizza Bread (v)</option>
                   <option value="Patatine Fritti (v)">Patatine Fritti (v)(chips)</option>
-                  <option value="no sides">No Side</option>
                 </select>
               </div>
             </div>
-          </div>
+          </div>       
+          
+                    <!-- Guest 2 -->
+                    <div class="form-group display-none" id="sides-guest-2">
+                      <div class="row">
+                        <div class="col-md">
+                          <select class="form-control" id="sides" name="sides">
+                            <option value="null"></option>
+                            <option value="Plain Garlic Pizza Bread (v)">Plain Garlic Pizza Bread (v)</option>
+                            <option value="Cheese Garlic Pizza Bread (v)">Cheese Garlic Pizza Bread (v)</option>
+                            <option value="Patatine Fritti (v)">Patatine Fritti (v)(chips)</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>       
 
-          <h3 class="mb-3 mt-3 display-4">Dessert</h3>
-
-          <div class="form-group">
+                              <!-- Guest 3 -->
+          <div class="form-group display-none" id="sides-guest-3">
             <div class="row">
               <div class="col-md">
-                <select class="form-control" id="dessert" name="dessert">
-                  <option value="Tiramisu">Tiramisu</option>
-                  <option value="Macedonia di Fruia Fresca">Macedonia di Fruia Fresca(Fresh fruit salad made with seasonal fruits served with cream or ice cream)</option>
-                  <option value="Bigne al Cioccolato">Bigne al Cioccolato(Profieroles. Light choux bens filled with créme patissiére and drizzled with chocolate sauce)</option>
-                  <option value="Torta al Cioccolato">Torta al Cioccolato(Chocolate fudge cake served hot or cold with cream or ice cream or both)</option>
-                  <option value="Gondola Gloria">Gondola Gloria(Banana boat with fresh fruit salad, tiramisu, ice cream and whipped cream, topped with ground chocolate. )</option>
-                  <option value="Banoffi">Banoffi(Rich and indulgent, the banana and toffee sensation. Available on prescription only)</option>
-                  <option value="Gelato Misto">Gelato Misto</option>
+                <select class="form-control" id="sides" name="sides">
+                  <option value="null"></option>
+                  <option value="Plain Garlic Pizza Bread (v)">Plain Garlic Pizza Bread (v)</option>
+                  <option value="Cheese Garlic Pizza Bread (v)">Cheese Garlic Pizza Bread (v)</option>
+                  <option value="Patatine Fritti (v)">Patatine Fritti (v)(chips)</option>
                 </select>
               </div>
             </div>
-          </div>
+          </div>       
 
-          
+                    <!-- Guest 4 -->
+                    <div class="form-group display-none" id="sides-guest-4">
+                      <div class="row">
+                        <div class="col-md">
+                          <select class="form-control" id="sides" name="sides">
+                            <option value="null"></option>
+                            <option value="Plain Garlic Pizza Bread (v)">Plain Garlic Pizza Bread (v)</option>
+                            <option value="Cheese Garlic Pizza Bread (v)">Cheese Garlic Pizza Bread (v)</option>
+                            <option value="Patatine Fritti (v)">Patatine Fritti (v)(chips)</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>       
 
           <div class="form-group mt-5">
             <label for="message"
@@ -324,6 +467,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
