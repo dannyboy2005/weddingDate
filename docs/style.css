@@ -105,9 +105,6 @@ form input, form textarea {
 .display-none {
   display: none;
 }
-.display {
-  display: block;
-}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
